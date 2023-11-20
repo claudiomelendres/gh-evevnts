@@ -10,10 +10,10 @@ on:
   push:
     branches:
       - main
-      - "dev-*" # Deploy all dev branches dev-new dev-old
+      - "dev-*" # Deploy all dev branches dev-new dev-old 1
       - "feature/**" # feature/new feature/new/button
     paths-ignore:
-      - ".github/**"
+      - ".github/workflows/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
